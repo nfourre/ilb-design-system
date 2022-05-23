@@ -1,0 +1,35 @@
+{
+    "name": "ilb-button",
+    "version": "0.0.0",
+    "description": "Button webComponent",
+    "keywords": [
+        "button",
+        "web-components",
+        "lit-element",
+        "typescript"
+    ],
+    "license": "ISC",
+    "main": "dist/index.js",
+    "unpkg": "dist/index.js",
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c ../../rollup.config.js",
+        "serve": "rollup -w -c ../../rollup.config.dev.js",
+        "checksize": "rollup -c ../../rollup.config.js ; cat dist/index.js | gzip -9 | wc -c ; rm dist/index.js",
+        "prepublish": "rollup -c ../../rollup.config.js",
+        "test": "web-test-runner ./src/**/*.spec.ts --node-resolve",
+        "test:watch": "web-test-runner ./src/**/*.spec.ts --node-resolve --watch",
+        "lint": "eslint ./src --ext ts"
+    },
+    "devDependencies": {
+        "rollup": "^2.74.1"
+    },
+    "dependencies": {
+        "ilb-types": "^0.0.0",
+        "lit": "^2.0.2"
+    }
+}

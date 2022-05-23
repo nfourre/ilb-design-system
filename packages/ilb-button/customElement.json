@@ -1,0 +1,23 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "bl-button",
+      "path": "./src/bl-button.ts",
+      "description": "Button from Boulanger Design System",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n    .btn {\\n      background: red\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ]
+    }
+  ]
+}
